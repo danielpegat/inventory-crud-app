@@ -1,0 +1,23 @@
+/**
+ * Request Validation Middleware
+ * Uses express-validator to validate incoming request data.
+ * Returns 400 with detailed error messages if validation fails.
+ */
+const { validationResult } = require('express-validator');
+
+const validate = (req, res, next) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({
+      success: false,
+      message: 'Validation failed',
+      errors: errors.array().map(err => ({
+        field: err.path,
+        message: err.msg,
+      })),
+    });
+  }
+  next();
+};
+
+module.exports = validate;
