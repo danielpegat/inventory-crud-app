@@ -4,7 +4,7 @@ A production-style full-stack CRUD web application for inventory management, bui
 
 ![Tech Stack](https://img.shields.io/badge/React-18-blue) ![Node](https://img.shields.io/badge/Node.js-Express-green) ![MySQL](https://img.shields.io/badge/MySQL-8-orange) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-blue)
 
-## ✨ Features
+## Features
 
 - **JWT Authentication** — Login with email/password, access & refresh tokens
 - **Role-Based Access** — Admin (full CRUD) and User (read-only) roles
@@ -17,7 +17,7 @@ A production-style full-stack CRUD web application for inventory management, bui
 - **Responsive Design** — Works on desktop and tablet
 - **Error Handling** — Toast notifications, form validation, loading states
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 web-app-crud/
@@ -44,7 +44,7 @@ web-app-crud/
 └── README.md
 ```
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
@@ -183,13 +183,13 @@ Then login at `http://localhost:5173/login` with:
 - `sortBy` — Sort column: name, price, quantity, created_at
 - `order` — Sort direction: asc, desc
 
-## 🔐 Test Credentials
+## Test Credentials
 
 After registering via the API:
 - **Admin:** admin@test.com / Admin123!
 - **User:** Create with role "user" for read-only access
 
-## 🛠️ Tech Stack Details
+## Tech Stack Details
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
